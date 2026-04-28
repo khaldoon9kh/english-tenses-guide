@@ -1,0 +1,125 @@
+import { colors } from "./colors";
+
+export const COMPARISONS = [
+  {
+    id: "ps-vs-pp",
+    title: "Past Simple vs Present Perfect",
+    emoji: "⚔️",
+    color: colors.orange,
+    left: {
+      name: "Past Simple",
+      signal: "Finished time mentioned",
+      examples: ["I saw her yesterday.", "We met in 2015.", "He left an hour ago."],
+      rule: "Use when the TIME is over and specific: yesterday, last week, in 2010, ago",
+    },
+    right: {
+      name: "Present Perfect",
+      signal: "Connected to NOW",
+      examples: ["I have seen her recently.", "We have met before.", "He has just left."],
+      rule: "Use when the past is still relevant NOW, or when no specific finished time is given",
+    },
+    tip: "🔑 KEY TEST: Can you add 'yesterday' or 'last week' naturally? → Past Simple. Does the action still matter NOW? → Present Perfect.",
+    exercises: [
+      { q: "I _____ (see) that film last Monday.", a: "saw", exp: "'Last Monday' = finished time → Past Simple" },
+      { q: "_____ you ever _____ (be) to Turkey?", a: "Have you ever been", exp: "Life experience, no specific time → Present Perfect" },
+      { q: "She _____ (just/send) you an email.", a: "has just sent", exp: "'Just' = very recently, still relevant now → Present Perfect" },
+      { q: "They _____ (arrive) in Amsterdam in 2020.", a: "arrived", exp: "'In 2020' = specific past time → Past Simple" },
+    ],
+  },
+  {
+    id: "ps-vs-pc",
+    title: "Present Simple vs Present Continuous",
+    emoji: "⚔️",
+    color: colors.green,
+    left: {
+      name: "Present Simple",
+      signal: "Regular / Always true",
+      examples: ["I drink coffee every morning.", "She works in a hospital.", "Water boils at 100°C."],
+      rule: "Habits, routines, facts, permanent situations",
+    },
+    right: {
+      name: "Present Continuous",
+      signal: "Happening right now / Temporary",
+      examples: ["I am drinking coffee (right now).", "She is working from home (this week).", "Look! It is boiling!"],
+      rule: "Actions in progress NOW, temporary situations, planned future events",
+    },
+    tip: "🔑 KEY TEST: Is this your NORMAL LIFE or is this happening RIGHT NOW as a temporary thing? Normal life → Simple. Right now / temporary → Continuous.",
+    exercises: [
+      { q: "She usually _____ (walk) to work, but today she _____ (take) the bus.", a: "walks / is taking", exp: "Usually = habit (simple); today = temporary now (continuous)" },
+      { q: "I _____ (not/understand) this grammar rule.", a: "don't understand", exp: "'Understand' is a state verb — NEVER use continuous" },
+      { q: "What _____ you _____ (do) right now?", a: "are you doing", exp: "'Right now' = in progress → continuous" },
+    ],
+  },
+  {
+    id: "will-vs-going-to",
+    title: "Will vs Going To",
+    emoji: "⚔️",
+    color: colors.accent,
+    left: {
+      name: "Will",
+      signal: "Spontaneous / Opinion / Promise",
+      examples: ["I'll get the door! (just decided)", "I think it will be sunny.", "I promise I'll help you."],
+      rule: "Instant decisions, opinions about future, offers, promises, requests",
+    },
+    right: {
+      name: "Going To",
+      signal: "Planned / Evidence",
+      examples: ["I'm going to call her later (I planned it).", "Look! It's going to rain (dark clouds).", "We're going to move house next month."],
+      rule: "Plans made in advance, predictions based on present evidence",
+    },
+    tip: "🔑 KEY TEST: Did you decide just NOW? → Will. Did you plan it BEFORE? → Going To. Can you see EVIDENCE it will happen? → Going To.",
+    exercises: [
+      { q: "Don't worry about dinner — I _____ (cook) something. (just decided)", a: "will cook", exp: "Spontaneous decision in the moment → will" },
+      { q: "We _____ (visit) Paris next summer. We've already booked the hotel.", a: "are going to visit", exp: "Pre-planned with evidence → going to" },
+      { q: "She's pale and shaking — she _____ (faint)!", a: "is going to faint", exp: "Visible evidence right now → going to" },
+    ],
+  },
+  {
+    id: "pastsimp-vs-pastcont",
+    title: "Past Simple vs Past Continuous",
+    emoji: "⚔️",
+    color: colors.purple,
+    left: {
+      name: "Past Simple",
+      signal: "Short / Completed action",
+      examples: ["He arrived at 8.", "She called me.", "I dropped my keys."],
+      rule: "Completed actions, the short interrupting event",
+    },
+    right: {
+      name: "Past Continuous",
+      signal: "Longer / Ongoing background action",
+      examples: ["He was sleeping when I arrived.", "She was cooking when he called.", "I was walking when I dropped my keys."],
+      rule: "Background action in progress when something else happened",
+    },
+    tip: "🔑 KEY PATTERN: 'I was [doing something] WHEN [something happened].' The WAS/WERE action is the long background. The WHEN action is the short interruption (Past Simple).",
+    exercises: [
+      { q: "I _____ (read) a book when the lights _____ (go out).", a: "was reading / went out", exp: "Long background (was reading) + short interruption (went out)" },
+      { q: "While she _____ (cook) dinner, he _____ (set) the table.", a: "was cooking / was setting", exp: "Two parallel ongoing actions → both past continuous" },
+      { q: "They _____ (play) football when it _____ (start) to rain.", a: "were playing / started", exp: "Background activity + sudden interruption" },
+    ],
+  },
+  {
+    id: "pp-vs-ppc",
+    title: "Present Perfect vs Present Perfect Continuous",
+    emoji: "⚔️",
+    color: colors.teal,
+    left: {
+      name: "Present Perfect",
+      signal: "Completed with a result",
+      examples: ["I have written three emails.", "She has eaten already.", "He has lived here for years."],
+      rule: "Focus on the result/completion, the number of times, or a state that has continued",
+    },
+    right: {
+      name: "Present Perfect Continuous",
+      signal: "Ongoing action up to now",
+      examples: ["I have been writing emails all morning.", "She has been eating (she's still at the table).", "He has been living here for years."],
+      rule: "Focus on the DURATION, the activity itself still in progress, or recently finished but effect is visible",
+    },
+    tip: "🔑 KEY TEST: RESULT or completion? → Present Perfect. DURATION or ongoing activity? → Present Perfect Continuous. 'I have cleaned the house' (it's clean now). 'I have been cleaning the house' (I'm tired, I just stopped).",
+    exercises: [
+      { q: "I _____ (read) five chapters already. (focus: quantity done)", a: "have read", exp: "Completed with quantity → Present Perfect" },
+      { q: "She looks exhausted — she _____ (work) all day.", a: "has been working", exp: "Duration, activity ongoing/just finished → Present Perfect Continuous" },
+      { q: "How long _____ you _____ (study) English?", a: "have you been studying", exp: "Duration question → Present Perfect Continuous" },
+    ],
+  },
+];
