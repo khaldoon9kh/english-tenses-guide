@@ -17,6 +17,8 @@ export const colors = {
   orangeSoft: "#fb923c20",
   teal: "#2dd4bf",
   tealSoft: "#2dd4bf20",
+  pink: "#e879f9",
+  pinkSoft: "#e879f920",
   text: "#e8eaf0",
   textMuted: "#8892a4",
   textDim: "#4a5568",
